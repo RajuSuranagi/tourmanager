@@ -1,0 +1,14 @@
+body {
+  padding-top: 50px;
+}
+
+.em-text {
+  color:#1eb1eb !important;
+}
+
+.container > .navbar-collapse {
+  margin-left: 75px;
+}
+.navbar-nav > li > a {
+  padding-top:30px;
+}
