@@ -1,13 +1,23 @@
 /**
  * Custom style for Tour Planner
  */
+:root{
+  --body-bgcolor: #eeeeee;
+  --em-text-color: #1eb1eb;
+  --navbar-bgcolor: #000000;
+  --brand-text-color: #1eb;
+  --nactive-nfocus-headers-color:#aec1c1;
+  --active-or-hover-headers-color: #44c1c1;
+}
 body {
   padding-top: 50px;
-  background-color: #eeeeee;
+  background-color: var(--body-bgcolor) ;
+  background-image: url('../img/home_jumbo.jpg');
+  
 }
 
 .em-text {
-  color:#1eb1eb !important;
+  color: var(--em-text-color) !important;
 }
 
 .container > .navbar-collapse {
@@ -15,12 +25,15 @@ body {
 }
 
 .navbar-default {
-  background-color: #000000;
+  background-color: var(--navbar-bgcolor);
 }
 
+.navbar-custom {
+  padding: 10px;
+}
 .navbar-default .navbar-brand  {
   padding-top:25px;
-  Color: #1eb;
+  Color: var(--brand-text-color);
   font-size: 22px;
 }
 
@@ -33,15 +46,19 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #aec1c1;
+  color: var(--nactive-nfocus-headers-color);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #44c1c1;
+  color: var(--active-or-hover-headers-color);
 }
 
 .navbar-default .navbar-nav > .active > a {
   font-weight: bold;
   background-color: rgba(0,0,0,0) !important;
-  color: #aec1c1;
+  color: var(--active-or-hover-headers-color);
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  color: var(--active-or-hover-headers-color);
 }
