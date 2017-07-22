@@ -4,7 +4,8 @@
 :root{
   --body-bgcolor: #eeeeee;
   --em-text-color: #1eb1eb;
-  --navbar-bgcolor: #000000;
+  //--navbar-bgcolor: #000000;
+  --navbar-bgcolor: -webkit-linear-gradient(left, black, #056056);
   --brand-text-color: #1eb;
   --nactive-nfocus-headers-color:#aec1c1;
   --active-or-hover-headers-color: #44c1c1;
@@ -19,13 +20,13 @@ body {
 .em-text {
   color: var(--em-text-color) !important;
 }
-
+/*
 .container > .navbar-collapse {
   margin-left: 75px;
-}
+}*/
 
 .navbar-default {
-  background-color: var(--navbar-bgcolor);
+  background: var(--navbar-bgcolor);
 }
 
 .navbar-custom {
@@ -61,4 +62,9 @@ body {
 
 .navbar-default .navbar-nav > .active > a:hover {
   color: var(--active-or-hover-headers-color);
+}
+
+
+#social .navbar .navbar-nav {
+  float: right;
 }
