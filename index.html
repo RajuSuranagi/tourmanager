@@ -13,34 +13,38 @@
 
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+      <div id="nav-md" class="container">
+        <div class="navbar navbar-brand content-page-margin col-md-2">
+          Tour Planner
         </div>
-        <div class="navbar navbar-brand content-page-margin col-md-2">Tour Planner</div>
-          <div id="navbar" class="collapse navbar-collapse col-md-6 col-sm-10">
-            <ul class="nav navbar-nav">
-              <li class="active"><a class="content-page-margin" href="index.html">Home</a></li>
-              <li><a class="content-page-margin" href="about.html">Book Online</a></li>
-              <li><a class="content-page-margin" href="contactUs.html">Contact Us</a></li>
-              <li><a class="content-page-margin" href="contact.html">Blog</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3"></div>
-          <div id="social" class="collapse navbar-collapse col-md-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a class="content-page-margin" href="index.html">Fb</a></li>
-              <li><a class="content-page-margin" href="about.html">tw</a></li>
-              <li><a class="content-page-margin" href="contactUs.html">YT</a></li>
-            </ul>
-          </div>
+        <div id="navbar" class=" navbar-collapse col-md-9 col-sm-10">
+          <ul class="nav navbar-nav">
+            <li class="active"><a class="content-page-margin" href="index.html">Home</a></li>
+            <li><a class="content-page-margin" href="about.html">Book Online</a></li>
+            <li><a class="content-page-margin" href="contactUs.html">Contact Us</a></li>
+            <li><a class="content-page-margin" href="contact.html">Blog</a></li>
+          </ul>
+        </div>
+        <div id="navbar-social" class="navbar-collapse col-md-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Fb</a></li>
+            <li><a href="#">tw</a></li>
+            <li><a href="#">YT</a></li>
+          </ul>
         </div><!--/.nav-collapse -->
+      </div>
+      <div id="nav-xs" class="dropdown">
+        <button class="btn btn-default dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Tour Planner
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu .nav-dropdown" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
       </div>
     </nav>
 
