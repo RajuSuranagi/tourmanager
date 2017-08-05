@@ -13,7 +13,6 @@
 body {
   padding-top: 50px;
   background-color: var(--body-bgcolor) ;
-  background-image: url('../img/home_jumbo.jpg');
   
 }
 
@@ -36,6 +35,11 @@ body {
   padding-top:25px;
   Color: var(--brand-text-color);
   font-size: 22px;
+}
+
+.navbar > .container .navbar-brand{
+  margin-left:100px;
+  width: 200px;
 }
 
 .navbar {
@@ -67,4 +71,48 @@ body {
 
 #social .navbar .navbar-nav {
   float: right;
+}
+
+#nav-xs {
+  display:none;
+}
+
+@media screen and (max-width:768px) {
+
+  .navbar > .container .navbar-brand{
+    margin-left: 50px;
+  }
+
+  #navbar-social{
+    display: none;
+  }
+
+  #navbar {
+    margin-left:50px;
+  }
+}
+
+@media screen and (max-width:425px)  {
+
+
+  #nav-md {
+    display: none;
+  }
+
+  #nav-xs {
+    display:block;
+  }
+
+  #nav-xs button {
+    color: var(--brand-text-color);
+    background-color: var(--navbar-bgcolor);
+    font-size: 22px;
+    border: none;
+    padding: 15px 0px 5px 20px;;
+  }
+
+  .open > .dropdown-menu {
+    background-color: var(--navbar-bgcolor) !important;
+  }
+
 }
